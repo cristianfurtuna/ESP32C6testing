@@ -60,7 +60,7 @@ void ultrasonic_task (void *pvParameter){
 		else {
 			printf("Error reading data from Ultrasonic sensor: %d\n", err);
 		}
-		vTaskDelay(100 / portTICK_PERIOD_MS);
+		vTaskDelay(1000 / portTICK_PERIOD_MS);
 	}
 }
 
@@ -88,7 +88,7 @@ void app_main() {
     gpio_config(&io_conf);
 	rgb_led_http_server_started();
 	vTaskDelay(1000 / portTICK_PERIOD_MS);
-    //xTaskCreate(&dht_task, "dht_task", configMINIMAL_STACK_SIZE * 3, NULL, 5, NULL);
+    xTaskCreate(&dht_task, "dht_task", configMINIMAL_STACK_SIZE * 3, NULL, 5, NULL);
     xTaskCreate(&ultrasonic_task, "ULTRASONIC", configMINIMAL_STACK_SIZE * 3, NULL, 5, NULL);
 
 

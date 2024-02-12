@@ -2457,3 +2457,32 @@
 97	266	7292644709742544	C:/Users/crist/Desktop/ESP 32 Project/Code/ESP32_DHT/ESP32/build/bootloader/bootloader.map	4349c4b08a52fa8f
 267	2441	0	CMakeFiles/flash	e25b236df139318c
 267	2441	0	C:/Users/crist/Desktop/ESP 32 Project/Code/ESP32_DHT/ESP32/build/CMakeFiles/flash	e25b236df139318c
+110	292	7292644709742544	bootloader-prefix/src/bootloader-stamp/bootloader-build	4349c4b08a52fa8f
+110	292	7292644709742544	bootloader/bootloader.elf	4349c4b08a52fa8f
+110	292	7292644709742544	bootloader/bootloader.bin	4349c4b08a52fa8f
+110	292	7292644709742544	bootloader/bootloader.map	4349c4b08a52fa8f
+110	292	7292644709742544	C:/Users/crist/Desktop/ESP 32 Project/Code/ESP32_DHT/ESP32/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	4349c4b08a52fa8f
+110	292	7292644709742544	C:/Users/crist/Desktop/ESP 32 Project/Code/ESP32_DHT/ESP32/build/bootloader/bootloader.elf	4349c4b08a52fa8f
+110	292	7292644709742544	C:/Users/crist/Desktop/ESP 32 Project/Code/ESP32_DHT/ESP32/build/bootloader/bootloader.bin	4349c4b08a52fa8f
+110	292	7292644709742544	C:/Users/crist/Desktop/ESP 32 Project/Code/ESP32_DHT/ESP32/build/bootloader/bootloader.map	4349c4b08a52fa8f
+113	1027	7294676858117983	esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj	30a7c51275b83a23
+1060	1126	7294676859304606	esp-idf/main/libmain.a	25a579d1265f0f8c
+1127	9170	7294676939465947	esp-idf/esp_system/ld/sections.ld	74ed4ef4c1c9d664
+1127	9170	7294676939465947	C:/Users/crist/Desktop/ESP 32 Project/Code/ESP32_DHT/ESP32/build/esp-idf/esp_system/ld/sections.ld	74ed4ef4c1c9d664
+9176	9772	7294676945643014	app-template.elf	82d42f88f3e0c8e1
+9774	10063	7294676948663969	.bin_timestamp	f06b9e30e7f6bf43
+9774	10063	7294676948663969	C:/Users/crist/Desktop/ESP 32 Project/Code/ESP32_DHT/ESP32/build/.bin_timestamp	f06b9e30e7f6bf43
+10066	10152	0	esp-idf/esptool_py/CMakeFiles/app_check_size	d83e3586387ed693
+10066	10152	0	C:/Users/crist/Desktop/ESP 32 Project/Code/ESP32_DHT/ESP32/build/esp-idf/esptool_py/CMakeFiles/app_check_size	d83e3586387ed693
+107	207	0	esp-idf/esptool_py/CMakeFiles/app_check_size	d83e3586387ed693
+107	207	0	C:/Users/crist/Desktop/ESP 32 Project/Code/ESP32_DHT/ESP32/build/esp-idf/esptool_py/CMakeFiles/app_check_size	d83e3586387ed693
+104	288	7292644709742544	bootloader-prefix/src/bootloader-stamp/bootloader-build	4349c4b08a52fa8f
+104	288	7292644709742544	bootloader/bootloader.elf	4349c4b08a52fa8f
+104	288	7292644709742544	bootloader/bootloader.bin	4349c4b08a52fa8f
+104	288	7292644709742544	bootloader/bootloader.map	4349c4b08a52fa8f
+104	288	7292644709742544	C:/Users/crist/Desktop/ESP 32 Project/Code/ESP32_DHT/ESP32/build/bootloader-prefix/src/bootloader-stamp/bootloader-build	4349c4b08a52fa8f
+104	288	7292644709742544	C:/Users/crist/Desktop/ESP 32 Project/Code/ESP32_DHT/ESP32/build/bootloader/bootloader.elf	4349c4b08a52fa8f
+104	288	7292644709742544	C:/Users/crist/Desktop/ESP 32 Project/Code/ESP32_DHT/ESP32/build/bootloader/bootloader.bin	4349c4b08a52fa8f
+104	288	7292644709742544	C:/Users/crist/Desktop/ESP 32 Project/Code/ESP32_DHT/ESP32/build/bootloader/bootloader.map	4349c4b08a52fa8f
+289	2527	0	CMakeFiles/flash	e25b236df139318c
+289	2527	0	C:/Users/crist/Desktop/ESP 32 Project/Code/ESP32_DHT/ESP32/build/CMakeFiles/flash	e25b236df139318c
