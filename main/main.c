@@ -8,14 +8,16 @@
 #include "dht.h"
 #include "rgb_led.h"
 #include "ultrasonic.h"
+#include "driver/adc.h"
+//#include "st7789.h"
 
 
 
-
+#define MQ3_PIN	ADC1_CHANNEL_4 // Pin connected to MQ3 Analog output
 #define TRG_PIN 7
 #define ECH_PIN 6
 #define DHT_PIN 0  // Pin connected to DHT11 sensor module
-#define DHT_TYPE DHT_TYPE_DHT11  // Assuming DHT11 sensor type
+#define DHT_TYPE DHT_TYPE_DHT11
 
 
 
@@ -64,6 +66,21 @@ void ultrasonic_task (void *pvParameter){
 	}
 }
 
+void alcohol_task(void *pvParameters){
+	adc1_config_channel_atten(MQ3_PIN, ADC_ATTEN_DB_11);
+	while (1) {
+	        // Read ADC value
+	        int adc_value = adc1_get_raw(MQ3_PIN);
+
+	        // Convert ADC value to voltage
+	        float voltage = adc_value * (3.3 / 4095.0); // 12-bit ADC, 3.3V reference voltage
+
+	        printf("Voltage: %.2f V\n", voltage);
+
+	        vTaskDelay(1000 / portTICK_PERIOD_MS); // Delay for 1 second
+	    }
+
+}
 
 
 
@@ -89,8 +106,9 @@ void app_main() {
 	rgb_led_http_server_started();
 	vTaskDelay(1000 / portTICK_PERIOD_MS);
     xTaskCreate(&dht_task, "dht_task", configMINIMAL_STACK_SIZE * 3, NULL, 5, NULL);
-    xTaskCreate(&ultrasonic_task, "ULTRASONIC", configMINIMAL_STACK_SIZE * 3, NULL, 5, NULL);
+    //xTaskCreate(&ultrasonic_task, "ULTRASONIC", configMINIMAL_STACK_SIZE * 3, NULL, 5, NULL);
+    //xTaskCreate(&alcohol_task, "ALCOHOL", configMINIMAL_STACK_SIZE * 3, NULL, 5, NULL);
 
-
+    //display init
 
 }

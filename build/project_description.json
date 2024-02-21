@@ -1,7 +1,7 @@
 {
     "version":            "1",
     "project_name":       "app-template",
-    "project_version":    "1",
+    "project_version":    "c5f209e-dirty",
     "project_path":       "C:/Users/crist/Desktop/ESP 32 Project/Code/ESP32_DHT/ESP32",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.1.2",
     "build_dir":          "C:/Users/crist/Desktop/ESP 32 Project/Code/ESP32_DHT/ESP32/build",

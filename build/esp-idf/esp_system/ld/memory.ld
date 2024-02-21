@@ -44,7 +44,7 @@ _esp_flash_mmap_prefetch_pad_size = 16;
 _esp_memprot_prefetch_pad_size = 0;
 /* Memory alignment size for PMS */
 _esp_memprot_align_size = 0;
-_esp_mmu_block_size = (0x10000);
+_esp_mmu_block_size = (0x8000);
     /* rtc timer data (s_rtc_timer_retain_mem, see esp_clk.c files). For rtc_timer_data_in_rtc_mem section. */
 /**
 
@@ -72,7 +72,7 @@ MEMORY
   /* IRAM for PRO CPU. */
   iram0_0_seg (RX) : org = (0x40800000), len = 0x4086E610 - (0x40800000 - 0x40800000) - (0x40800000)
   /* Flash mapped instruction data */
-  irom_seg (RX) : org = 0x42000020, len = (0x10000 << 8) - 0x20
+  irom_seg (RX) : org = 0x42000020, len = (0x8000 << 8) - 0x20
   /**
 
    * (0x20 offset above is a convenience for the app binary image generation.
@@ -95,7 +95,7 @@ MEMORY
    */
   dram0_0_seg (RW) : org = (0x40800000), len = 0x4086E610 - (0x40800000 - 0x40800000) - (0x40800000)
   /* Flash mapped constant data */
-  drom_seg (R) : org = 0x42000020, len = (0x10000 << 8) - 0x20
+  drom_seg (R) : org = 0x42000020, len = (0x8000 << 8) - 0x20
   /* (See irom_seg for meaning of 0x20 offset in the above.) */
   /**
 
